@@ -285,7 +285,7 @@ const MonthCalendar = (props) => {
             props.setDayArray(updatedArrayOfDays);
         }
         getDaysOfMonth();
-    }, [currYear, monthIndex]);
+    }, [currYear, monthIndex, thisYear, props]);
 
     return (
         <Grid container>

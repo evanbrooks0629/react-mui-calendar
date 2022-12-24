@@ -1,5 +1,5 @@
 import React from 'react';
-import Calendar from './components/Calendar';
+import Calendar from 'react-mui-calendar';
 
 import { MaterialPicker } from 'react-color';
 import { Grid, Select, MenuItem } from '@mui/material';
