@@ -225,7 +225,6 @@ const MonthCalendar = (props) => {
 
     React.useEffect(() => {
         const getDaysOfMonth = () => {
-            
             let month;
             if (monthIndex < 10) {
                 month = '0'+monthIndex;
@@ -235,26 +234,18 @@ const MonthCalendar = (props) => {
             }
 
             let firstDayOfWeek = new Date(currYear + "-" + month + "-01").getDay(); // to tell which day of the week to start at
-            if (monthIndex < currMonth) {
-                if (firstDayOfWeek === 0) {
-                    firstDayOfWeek = 6;
-                } else {
-                    firstDayOfWeek--;
-                }
-            }
             const lastDay = new Date(currYear, month, 0).getDate(); // last number to end, days of month
             let updatedArrayOfDays = Array(42); // fill array with 42 empty values
             // based on days between Sunday to first day (lets say Thursday) we skip array at first 4 values
             const lastMonth = monthIndex-1;
 
-            let lastMonthM;
             if (lastMonth < 10) {
-                lastMonthM = '0'+lastMonth;
+                month = '0'+lastMonth;
             } else {
-                lastMonthM = lastMonth;
+                month = lastMonth;
             }
 
-            let lastDayOfLastMonth = new Date(currYear, lastMonthM, 0).getDate(); // get last date of last month and count backwards to fill beginning of array
+            let lastDayOfLastMonth = new Date(currYear, month, 0).getDate(); // get last date of last month and count backwards to fill beginning of array
             for (let i = firstDayOfWeek; i >= 0 ; i--) {
                 updatedArrayOfDays[i] = {
                     date: lastDayOfLastMonth,
