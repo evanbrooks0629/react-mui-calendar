@@ -150,9 +150,7 @@ const App = () => {
         <Grid item xs={3} align="right" style={{height: '20px', marginTop: '10px', }}>
           <a href="https://github.com/evanbrooks0629/react-mui-calendar" style={{marginRight: '10px'}}>GitHub</a>
         </Grid>
-        <Grid item xs={8} align="left" style={{height: '20px', marginTop: '30px'}}>
-          <h3 style={{marginLeft: '10px', color: '#cccccc', marginTop: '-20px'}}>Created by Evan Brooks</h3>
-        </Grid>
+        <Grid item xs={8} align="left" style={{height: '20px', marginTop: '30px'}} />
         <Grid item xs={4} align="right" style={{height: '20px', marginTop: '10px'}}>
           <a href="https://www.npmjs.com/package/react-mui-calendar" style={{marginTop: '-10px', marginRight: '10px'}}>NPM Page</a>
         </Grid>

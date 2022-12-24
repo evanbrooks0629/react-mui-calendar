@@ -195,37 +195,6 @@ const MonthCalendar = (props) => {
         'December'
     ];
 
-    // const years = [
-    //     {
-    //         key: 0,
-    //         value: 2019
-    //     },
-    //     {
-    //         key: 1,
-    //         value: 2020
-    //     },
-    //     {
-    //         key: 2,
-    //         value: 2021
-    //     },
-    //     {
-    //         key: 3,
-    //         value: 2022
-    //     },
-    //     {
-    //         key: 4,
-    //         value: 2023
-    //     },
-    //     {
-    //         key: 5,
-    //         value: 2024
-    //     },
-    //     {
-    //         key: 6,
-    //         value: 2025
-    //     }
-    // ];
-
     const [monthIndex, setMonthIndex] = React.useState(props.month); 
     const [arrayOfDays, setArrayOfDays] = React.useState(Array(42)); // fill array with empty undefined elements
     const [currYear, setCurrYear] = React.useState(props.year); 
@@ -253,21 +222,6 @@ const MonthCalendar = (props) => {
             setMonthIndex(12);
         }
     }
-
-    // const handleChangeYear = e => {
-    //     props.setYear(years[e.target.value]);
-    //     setCurrYear(years[e.target.value]);
-    // }
-
-    // React.useEffect(() => {
-    //     let yearIndex = 0;
-    //     for (let i = 0; i < years.length; i++) {
-    //         if (years[i].value === props.year) {
-    //             yearIndex = i;
-    //         }
-    //     }
-    //     setCurrYear(years[yearIndex]);
-    // }, []);
 
     React.useEffect(() => {
         const getDaysOfMonth = () => {
@@ -333,18 +287,9 @@ const MonthCalendar = (props) => {
         getDaysOfMonth();
     }, [currYear, monthIndex]);
 
-    // const MenuProps = {
-    //     PaperProps: {
-    //       style: {
-    //         backgroundColor: props.secondaryColor
-    //       }
-    //     }
-    // };
-
     return (
         <Grid container>
             <Grid item container xs={12} sx={{ marginLeft: { xs: '10px', sm: '0' }, marginRight: { xs: '10px', sm: '0' } }}>
-                {/* <Grid item sx={{ display: {xs: 'none', sm: 'block'} }} sm={2} md={4} /> */}
                 <Grid item container xs={12} style={{marginTop: '10px'}}>
                     <Grid item xs={2} sm={3} md={4} align="right">
                         <IconButton aria-label="delete" style={{ cursor: 'pointer', color: props.secondaryColor, height: "35px", width: "35px", backgroundColor: props.primaryColor}} onClick={handlePrevMonth} >
@@ -366,42 +311,6 @@ const MonthCalendar = (props) => {
                         </IconButton>
                     </Grid>
                 </Grid>
-                {/* <Grid item xs={3} sm={2} align="right" sx={{ marginLeft: { xs: '0', sm: '11%', md: '5.5%' } }}>
-                    <FormControl>
-                        <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={currYear.key}
-                            displayEmpty
-                            onChange={handleChangeYear}
-                            style={{color: props.primaryColor}}
-                            sx={{
-                                color: props.secondaryColor,
-                                '.MuiOutlinedInput-notchedOutline': {
-                                borderColor: props.primaryColor,
-                                },
-                                '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                                borderColor: props.primaryColor,
-                                },
-                                '&:hover .MuiOutlinedInput-notchedOutline': {
-                                borderColor: props.primaryColor,
-                                },
-                                '.MuiSvgIcon-root ': {
-                                fill: props.primaryColor + " !important",
-                                },
-                                backgroundColor: props.secondaryColor
-                            }}
-                            MenuProps={MenuProps}
-                        >
-                            {
-                                years.length > 0 ? years.map((year, index) => (
-                                    [console.log(index),
-                                    <MenuItem value={year.key} key={index+2019} style={{color: props.primaryColor, backgroundColor: props.secondaryColor}}>{year.value}</MenuItem>]
-                                )) : null
-                            }
-                        </Select>
-                    </FormControl>
-                </Grid> */}
                 <Grid item sx={{ display: { xs: 'none', sm: 'block' } }} sm={1} />
             </Grid>
             <Grid item xs={12} style={{height: '10px'}} />
