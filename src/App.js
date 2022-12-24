@@ -148,7 +148,7 @@ const App = () => {
           <h1 style={{marginLeft: '10px', marginTop: '0px'}}>MUI Calendar</h1>
         </Grid>
         <Grid item xs={3} align="right" style={{height: '20px', marginTop: '10px', }}>
-          <a href="#" style={{marginRight: '10px'}}>GitHub</a>
+          <a href="https://github.com/evanbrooks0629/react-mui-calendar" style={{marginRight: '10px'}}>GitHub</a>
         </Grid>
         <Grid item xs={8} align="left" style={{height: '20px', marginTop: '30px'}}>
           <h3 style={{marginLeft: '10px', color: '#cccccc', marginTop: '-20px'}}>Created by Evan Brooks</h3>
