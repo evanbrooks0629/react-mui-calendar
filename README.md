@@ -1,7 +1,7 @@
 # React MaterialUI Calendar
 
 * #### [GitHub Page](https://github.com/evanbrooks0629/react-mui-calendar)
-* #### [Live Demo Link](link to github pages)
+* #### [Live Demo Link](https://evanbrooks0629.github.io/react-mui-calendar/)
 * #### [NPM Link](https://www.npmjs.com/package/react-mui-calendar)
 
 A full-page calendar made for React applications, especially ones that use MaterialUI.
