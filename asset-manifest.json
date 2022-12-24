@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-mui-calendar/static/css/main.e6c13ad2.css",
-    "main.js": "/react-mui-calendar/static/js/main.9520e0cd.js",
+    "main.js": "/react-mui-calendar/static/js/main.b3d82d38.js",
     "static/js/787.b7382320.chunk.js": "/react-mui-calendar/static/js/787.b7382320.chunk.js",
     "index.html": "/react-mui-calendar/index.html",
     "main.e6c13ad2.css.map": "/react-mui-calendar/static/css/main.e6c13ad2.css.map",
-    "main.9520e0cd.js.map": "/react-mui-calendar/static/js/main.9520e0cd.js.map",
+    "main.b3d82d38.js.map": "/react-mui-calendar/static/js/main.b3d82d38.js.map",
     "787.b7382320.chunk.js.map": "/react-mui-calendar/static/js/787.b7382320.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.9520e0cd.js"
+    "static/js/main.b3d82d38.js"
   ]
 }
