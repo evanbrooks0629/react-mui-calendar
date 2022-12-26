@@ -40,7 +40,7 @@ const Component = () => {
 ```js
 <Calendar
     primaryColor: string,
-    // Accepts hex, rgb, color string, etc)
+    // Accepts hex, rgb, color string
     // Default is #000000
     // Sets color of month text, 
     // month forward and backward background color,
@@ -48,7 +48,7 @@ const Component = () => {
     // and date color
     
     secondaryColor: string,
-    // Accepts hex, rgb, color string, etc)
+    // Accepts hex, rgb, color string
     // Default is #FFFFFF
     // Sets background color of date boxes, color of icon
     // on month forward and backward buttons,
@@ -72,7 +72,7 @@ const Component = () => {
     // and "completed" fields can be optional
     
     dataDisplay: string,
-    // Accepts "circle", "list", or "" (no data display))
+    // Accepts "circle", "list", or "" (no data display)
     // Default is ""
     // Note that these options are case-sensitive
     // "circle" will show circles corresponding to the color
@@ -86,7 +86,8 @@ const Component = () => {
     
     handleClickDay: function
     // When you click on a date, this function returns an object
-    // with the date, month, and year of that day
+    // with the day, month, and year of that day;
+    // e.g. { day, month, year } to destructure
 />
 ```
 
@@ -142,6 +143,6 @@ What's next for react-mui-calendar? Here are some things that are being consider
 * Reach out to me with any ideas / problems / general comments at **evanbrooks0629@gmail.com**. I respond quickly and would love to keep users active with this project.
 
 
-### Why Use mui-calendar?
+### Why Use react-mui-calendar?
 
 I created react-mui-calendar because I wanted to use a full-page calendar within a React app, especially with MaterialUI. Since MUI only had a tiny, kind-of-annoying-to-use calendar, I ventured out to create my own.  All of the other React calendars I came across were, in my opinion, basically useless for how I wanted a calendar to be implemented. Either they looked bad, didn't handle datasets well, or both. Well...screw that! This is an extremely easy-to-use implementation of a calendar with very simple props. It also looks great on every screen size which is a plus. Trust me, creating a calendar from scratch is a hassle that you should NOT have to endure when spinning up a web app. MaterialUI Calendar to the rescue!
